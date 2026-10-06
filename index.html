@@ -1,0 +1,13 @@
+<!doctype html><html lang='de'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1,viewport-fit=cover'><meta name='theme-color' content='#090909'><link rel='manifest' href='manifest.json'><link rel='stylesheet' href='style.css'><title>PAZY</title></head><body><main class='app'><header><div><small>PAZY LIFE</small><h1>Heute</h1><p id='date'></p></div><div class='score'><b id='score'>0</b><span>/100</span></div></header>
+<section class='hero'><div><span>Daily Score</span><h2 id='scoreText'>Starte deinen Tag</h2></div><div class='bar'><i id='scoreBar'></i></div></section>
+<section class='grid'>
+<label class='card'><span>🔥 Kalorien</span><div><input id='cal' type='number' inputmode='numeric' placeholder='0'><b>/ <input id='calGoal' class='goal' type='number'> kcal</b></div><progress id='calProg' max='100' value='0'></progress><small id='calLeft'></small></label>
+<label class='card'><span>💪 Protein</span><div><input id='protein' type='number' inputmode='numeric' placeholder='0'><b>/ <input id='proteinGoal' class='goal' type='number'> g</b></div><progress id='proteinProg' max='100' value='0'></progress></label>
+<label class='card'><span>💧 Wasser</span><div><input id='water' type='number' step='.1' inputmode='decimal' placeholder='0'><b>/ <input id='waterGoal' class='goal' type='number' step='.1'> L</b></div><progress id='waterProg' max='100' value='0'></progress></label>
+<label class='card'><span>👟 Schritte</span><div><input id='steps' type='number' inputmode='numeric' placeholder='0'><b>/ <input id='stepsGoal' class='goal' type='number'></b></div><progress id='stepsProg' max='100' value='0'></progress></label>
+<label class='card'><span>😴 Schlaf</span><div><input id='sleep' type='number' step='.1' inputmode='decimal' placeholder='0'><b>/ <input id='sleepGoal' class='goal' type='number' step='.1'> h</b></div><progress id='sleepProg' max='100' value='0'></progress></label>
+<label class='card'><span>⚖️ Gewicht</span><div><input id='weight' type='number' step='.1' inputmode='decimal' placeholder='--'><b>kg</b></div><small>Einfach täglich oder wöchentlich eintragen</small></label>
+</section>
+<section class='habits'><div class='sectionTitle'><div><small>ROUTINE</small><h2>Gewohnheiten</h2></div><b id='habitCount'>0/0</b></div><div id='habitList'></div><div class='add'><input id='newHabit' placeholder='Neue Gewohnheit…'><button id='addHabit'>+</button></div></section>
+<section class='streak'><span>🔥 Aktueller Streak</span><b id='streak'>0 Tage</b><small>Ein Tag zählt, wenn mindestens 80 Punkte erreicht werden.</small></section>
+<footer>PAZY • Best out of what you have</footer></main><script src='app.js'></script></body></html>
